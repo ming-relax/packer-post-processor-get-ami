@@ -24,7 +24,7 @@ func (p *PostProcessor) PostProcess(ui packer.Ui, artifact packer.Artifact) (pac
 		panic(err)
 	}
 
-	err = ioutil.WriteFile("matrix/artifacts/packer_ami.json", b, 0644)
+	err = ioutil.WriteFile("packer_ami.json", b, 0644)
 	if err != nil {
 		panic(err)
 	}
